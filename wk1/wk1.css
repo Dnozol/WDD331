@@ -4,3 +4,33 @@
     */
     box-sizing: border-box;
 }
+
+html {
+    height: 100%;
+    /* body and height default height is actually auto */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* by default there actually is a little margin and padding for the body */
+}
+
+/*
+    margin: #px; // applies to all sides
+    margin: #px #px; // first applies to top and bottom, second applies to left and right
+    margin: (top)px (right)px (bottom)px (left)px; // first applies to the top, then works clockwise
+*/
+
+/*  vh - viewport height
+    vw - viewport width */
+
+/* media query (conditional css)
+@media screen and (min-width : 50em){  //(when width grows passed 50em) this is very mobile-first
+    // all of this will be applied when the screen size is greater than 50 em
+    // use as many break points as needed
+    // when deciding when to add a breakpoint, stretch the screen until it doesn't look good, that's 
+        // where the breakpoint needs to be set
+    // media queries need to be below the default css, typically at the bottom
+}
+*/
