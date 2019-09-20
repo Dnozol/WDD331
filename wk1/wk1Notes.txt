@@ -1,3 +1,4 @@
+<!-- Media Query notes -->
 * {
     /* total width = content width + padding + border 
     changes the width calculation to be relative to the whole window
