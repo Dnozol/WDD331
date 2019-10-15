@@ -1,0 +1,14 @@
+/* this is a SASS file, it needs to be converted to css
+for the browser to be used by the browser*/
+
+/* variables */
+$body-background-color: lightblue;
+$form-background-color: green;
+
+body {
+    background-color: $body-background-color;
+}
+
+form {
+    background-color: $form-background-color;
+}

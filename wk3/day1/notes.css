@@ -1,0 +1,16 @@
+/* this is a SASS file, it needs to be converted to css
+for the browser to be used by the browser*/
+/* variables */
+body {
+  background-color: lightblue;
+}
+
+form {
+  background-color: green;
+}
+
+p{ 
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*# sourceMappingURL=notes.css.map */
