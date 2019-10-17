@@ -1,0 +1,53 @@
+
+
+csslint: There are 10 problems in C:\Users\deanz\Desktop\WDD331\wk1\kidsRead_files\main.css.
+
+main.css
+1: warning at line 1, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+main.css
+2: warning at line 3, col 1
+The universal selector (*) is known to be slow.
+* {
+
+main.css
+3: warning at line 4, col 5
+The box-sizing property isn't supported in IE6 and IE7.
+    box-sizing: border-box;
+
+main.css
+4: warning at line 23, col 8
+Heading (h1) should not be qualified.
+header h1 a {
+
+main.css
+5: warning at line 55, col 9
+Heading (h2) should not be qualified.
+article h2 a:link, article h2 a:visited{
+
+main.css
+6: warning at line 55, col 28
+Heading (h2) should not be qualified.
+article h2 a:link, article h2 a:visited{
+
+main.css
+7: warning at line 60, col 9
+Heading (h2) should not be qualified.
+article h2 a:active {
+
+main.css
+8: warning at line 64, col 9
+Heading (h2) should not be qualified.
+article h2 a:hover {
+
+main.css
+9: warning at line 77, col 5
+Using width with padding can sometimes make elements larger than you expect.
+    padding: 20px 40px;
+
+main.css
+10: warning at line 81, col 1
+Rule doesn't have all its properties in alphabetical order.
+img {
