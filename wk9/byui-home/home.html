@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Brigham Young University - Idaho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="site-banner white-text">
+        <div class="site-banner__left">
+          <a href="#"
+            ><span aria-hidden="divue" class="icon-byui-logo">
+              <span class="sr-only">Link to BYU-Idaho home page</span>
+            </span></a
+          >
+        </div>
+        <div class="site-banner__right">
+          <a href="http://www.byui.edu/#">
+            <span class="icon-search text-white mobile-header-icon">
+              <span class="sr-only">Search BYU-I</span>
+            </span>
+          </a>
+          <a
+            href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
+          >
+            <span class="icon-audience text-white mobile-header-icon">
+              <span class="sr-only">Login</span>
+            </span>
+          </a>
+          <a href="http://www.byui.edu/#">
+            <span class="icon-menu text-white mobile-header-icon">
+              <span class="sr-only">Expand Menu</span>
+            </span>
+          </a>
+        </div>
+        <form
+          aria-label="Search byui.edu"
+          method="get"
+          action="https://www.byui.edu/search/result?"
+          role="search"
+        >
+          <div>
+            <label for="searchDesktop" class="sr-only"
+              >Search BYU-I websites:
+            </label>
+            <input
+              id="searchDesktop"
+              name="q"
+              placeholder="Powered by Google"
+              alt="Search BYU-I websites (powered by Google.com)."
+              type="text"
+            />
+
+            <button type="submit">
+              <span aria-hidden="divue" class="icon icon-magnifying-glass ">
+                <span class="sr-only">Submit</span>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <h1 class="title">Brigham Young University - Idaho</h1>
+    </header>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+    <main>
+      <div class="row"> <!-- carousel main images -->
+        <div class="container col-8">
+          <div class="carousel"><img src="./images/carousel.jpg" alt="carousel"></div>
+          <div class="subLink" id="sub1"><img src="./images/campusVideos.jpg" alt="videos"></div>
+          <div class="subLink" id="sub2"><img src="./images/photoGallery.jpg" alt="gallery"></div>
+          <div class="subLink" id="sub3"><img src="./images/exploreCampus.jpg" alt="campus"></div>
+        </div>
+
+        <!-- sid bar images -->
+        <div class="sidebar">
+          <div class="infobar">
+            <h3>GET INFORMATION FOR:</h3>
+            <select id="info">
+              <option value="futureStudents"><a href="">Future Students</a></option>
+              <option value="currentStudents"><a href="">Current Students</a></option>
+              <option value="employees"><a href="">Employees</a></option>
+              <option value="parentsAndFamily"><a href="">Parents and Family</a></option>
+              <option value="alumni"><a href="">Alumni</a></option>
+              <option value="visitors"><a href="">Visitors</a></option>
+            </select>
+          </div><br>
+          <div class="resources">
+            <h3>Resources</h3>
+            <div>
+              <a hfref="">Apply Now</a>
+              <a hfref="">Financial Aid</a>
+              <a hfref="">Degrees and Programs</a>
+              <a hfref="">Student Housing</a>
+              <a hfref="">Tuition and Fees</a>
+              <a hfref="">Academic Deadlines</a>
+            </div>
+          </div><br>
+          <div class="importantDates">
+            <h3>Important Dates</h3>
+            <div class="row">
+              <span class='date col-3'>Nov 19 </span>
+              <span class="col-1">-</span>
+              <span class="col-8">Devotional: Elder Vern P. Stanfill</span>
+            </div>
+            <div class="row">
+              <span class='date col-3'>Nov 26 </span>
+              <span class="col-1">-</span>
+              <span class="col-8">Devotional: Rachel Huber</span>
+            </div>
+            <div class="row">
+              <span class='date col-3'>Dec 03 </span>
+              <span class="col-1">-</span>
+              <span class="col-8">Devotional: Brian Merrill</span>
+            </div>
+            <div class="row">
+              <span class='date col-3'>Dec 05 </span>
+              <span class="col-1">-</span>
+              <span class="col-8">Art Exhibit: Reception for Student Art Show: BYU-Idaho Art Students</span>
+            </div>
+          </div><br>
+        </div> <!-- end of side bar-->
+      </div> <!-- end of main presentation -->
+      <div class="secondaryInfo">
+        <div class="row">
+          <div class="newsroom col-8">
+            <h2>Newroom</h2>
+            <hr>
+            <article class="article row">
+              <img class="col-3" src="./images/newsroom1.jpg" alt="theater">
+              <div class="col-9">
+                <div class="newsDate">NOVEMBER 14, 2019</div>
+                <h4><a href="">BYU-Idaho theater students to perform Pulitzer Prize play</a></h4>
+                <p class="story">
+                  "Tally's Folly" will be the last play to be presented this Winter semester
+                </p>
+              </div>
+            </article>
+            <hr>
+            <article class="article row">
+              <img class="col-3" src="./images/newsroom2.jpg" alt="benRector">
+              <div class="col-9">
+                <div class="newsDate">NOVEMBER 13, 2019</div>
+                <h4><a href="">Ben Rector to perform at BYU-Idaho</a></h4>
+                <p class="story">
+                  Rector's upcoming performances on "The Old Friends Acoustic Tour" will also feature guest artist Cody Fry
+                </p>
+              </div>
+            </article>
+            <hr>
+            <article class="article row">
+              <img class="col-3"src="./images/newsroom3.jpg" alt="extravadance">
+              <div class="col-9">
+                <div class="newsDate">OCTOBER 31, 2019</div>
+                <h4><a href="">Extravadance</a></h4>
+                <p class="story">
+                  Brigham Young University-Idaho's Department of Theatre and Dance will showcase the power of art throught this semester's Extravadance theme, "Art Embodied"
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="universityMessage">
+              <h4>University Message</h4>
+              <img class="col-4" src="./images/universityMessage.jpg" alt="universityMessage">
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

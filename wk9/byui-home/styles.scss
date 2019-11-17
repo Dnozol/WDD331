@@ -1,0 +1,225 @@
+@import 'typography';
+@import 'icons';
+
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+/////////////////////////////////// My scss
+@mixin col($span) {
+  flex: 0 0 8.333% * $span;
+}
+
+// coloumn classes
+@for $index from 1 to 12 {
+  .col-#{$index} {
+    @include col($index);
+  }
+}
+
+header {
+  border: 1px solid black;
+  
+  h1 {
+    background-color: $light-gray;
+    font-family: 'BYUI Open Sans';
+  }
+}
+
+.site-banner__left {
+  float: left;
+}
+
+.site-banner__right {
+  float: right;
+}
+
+h3, h4 {
+  margin: 0;
+}
+
+main {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.sidebar {
+  display: grid;
+  grid-auto-rows: max-content;
+}
+
+.infobar {
+  #info {
+    display: none;
+  }
+  h3 {
+    background-color: $light-gray;
+    font-family: 'BYUI Open Sans';
+    font-size: 1em;
+    border: 1px solid $dark-gray;
+    padding: 5px 0 5px 15px;
+    border-radius: 5px;
+  }
+  &:hover {
+    #info {
+      display: block;
+      width: 100%;
+      height: 1.5em;
+    }
+  }
+}
+
+.resources {
+  border-left: 1px solid $dark-gray;
+  border-right: 1px solid $dark-gray;
+  h3 {
+    color: white;
+    background-color: $dark-gray;
+    font-family: 'BYUI Open Sans';
+    padding: 10px 0 10px 15px;
+  }
+  a {
+    display: block;
+    padding: 5px 0 5px 15px;
+    font-family: 'BYUI Open Sans';
+    color: $link-blue;
+    border-bottom: 1px solid $dark-gray;
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+}
+
+//// calendar
+.importantDates {
+  margin: 0;
+  h3 {
+    background-color: $byui-blue;
+    color: white;
+    padding: 10px 0 10px 15px;
+    font-family: 'BYUI Open Sans';
+  }
+  .row {
+    border-bottom: 1px solid $dark-gray;
+    padding: 5px 0 5px 15px;
+    font-family: 'BYUI Open Sans';
+    font-size: .9em;
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+  .date {
+    margin: auto;
+    font-weight: bold;
+    font-size: .9em;
+  }
+}
+
+
+
+///// NEWSROOM 
+.newsroom {
+  padding-right: 20px;
+  h2 {
+    font-family: 'BYUI Open Sans';
+  }
+  h4 {
+    margin-top: 10px;
+  }
+  .newsDate {
+    font-weight: bold;
+    font-size: .8em;
+  }
+  a {
+    text-decoration: none;
+    color: $link-blue;
+    font-family: 'BYUI Open Sans';
+  }
+  p {
+    
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+  }
+  img {
+    display: none;
+  }
+}
+
+.universityMessage {
+  margin-left: 20px;
+  border-radius: 5px;
+  height: fit-content;
+  border: 1px solid black;
+  h4 {
+    padding: 10px;
+    background-color: $light-gray;
+  }
+  img {
+    padding: 5px 5px 0 5px;
+  }
+}
+
+
+// desktop conditions
+@media only screen and (min-width: 768px) {
+  .row { 
+    display: flex;
+  }
+  // images
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    :nth-child(1) {
+      grid-column: 1/4;
+    }
+  }
+  main {
+    max-width: 1200px; 
+  }
+
+  .sidebar {
+    margin-left: 20px;
+  }
+
+  .newsroom {
+    .article {
+      margin: 25px 0;
+    }
+    img {
+      width: 25%;
+      margin-right: 30px;
+      display: block;
+    }
+  }
+
+} // end of media query
+
