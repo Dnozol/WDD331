@@ -47,11 +47,17 @@ img {
 
 header {
   border: 1px solid black;
-  
-  h1 {
-    background-color: $light-gray;
-    font-family: 'BYUI Open Sans';
+  height: 4em;
+  background-color: $byui-blue;
+  #searchDesktop {
+    display: none;
   }
+}
+
+h1 {
+  margin: 0;
+  background-color: $light-gray;
+  font-family: 'BYUI Open Sans';
 }
 
 .site-banner__left {
@@ -173,6 +179,17 @@ main {
   }
 }
 
+.newsButton {
+  text-align: center;
+  margin-left: 50%;
+  background-color: $byui-blue;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-family: 'BYUI Open Sans';
+  font-size: 1.2em;
+}
+
 .universityMessage {
   margin-left: 20px;
   border-radius: 5px;
@@ -203,7 +220,7 @@ main {
     }
   }
   main {
-    max-width: 1200px; 
+    max-width: 1200px;
   }
 
   .sidebar {
